@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team AEVORA 007 &mdash; AGRI-SEAL | Smart India Hackathon 2026</title>
+<meta name="description" content="AGRI-SEAL: Low-Cost IoT Blockchain Nodes for Farm-to-Fork Traceability. Team AEVORA 007, Smart India Hackathon 2026.">
+<link rel="icon" href="assets/uyirlogo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="brand">
+      <span class="brand-mark">AS</span>
+      <span class="brand-text">
+        <strong>AGRI&#8209;SEAL</strong>
+        <small>Team AEVORA 007</small>
+      </span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#innovation">Innovation</a>
+      <a href="#approach">Approach</a>
+      <a href="#feasibility">Feasibility</a>
+      <a href="#impact">Impact</a>
+      <a href="#demo">Prototype</a>
+      <a href="#team">Team</a>
+      <a href="#mentors">Mentors</a>
+      <a href="#research">Research</a>
+      <a href="https://agri-seali.onrender.com/" target="_blank" rel="noopener" class="nav-cta">Dashboard</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <span class="pill">Smart India Hackathon 2026 &middot; Hardware Edition</span>
+    <h1>AGRI&#8209;SEAL</h1>
+    <p class="hero-sub">Low&#8209;Cost IoT Blockchain Nodes for <em>Farm&#8209;to&#8209;Fork</em> Traceability</p>
+    <p class="hero-desc">A solar&#8209;powered, tamper&#8209;evident monitoring node that rides with the truck &mdash; one device, one QR code, complete cargo history from the farm gate to the dinner plate.</p>
+    <div class="hero-cta">
+      <a href="#innovation" class="btn btn-primary">Our Innovation</a>
+      <a href="https://agri-seali.onrender.com/" target="_blank" rel="noopener" class="btn btn-ghost">Dashboard</a>
+      <a href="#team" class="btn btn-ghost">Meet the Team</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat"><b>26232</b><span>Problem Statement ID</span></div>
+      <div class="stat"><b>138380</b><span>Team ID</span></div>
+      <div class="stat"><b>Hardware</b><span>PS Category</span></div>
+      <div class="stat"><b>6</b><span>Team Members</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PS STRIP ================= -->
+<section class="strip">
+  <div class="container strip-grid">
+    <div><small>Problem Statement ID</small><p>26232</p></div>
+    <div><small>Theme</small><p>Agriculture, FoodTech &amp; Rural Development</p></div>
+    <div><small>PS Category</small><p>Hardware</p></div>
+    <div><small>Team Name</small><p>AEVORA 007</p></div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">About</span>
+      <h2>Smart India Hackathon 2026</h2>
+      <p class="lead">Smart India Hackathon is a nationwide innovation initiative that challenges students to solve pressing real&#8209;world problems with practical, scalable technology. Team AEVORA 007 is competing in the Hardware category under the Agriculture, FoodTech &amp; Rural Development theme.</p>
+    </div>
+
+    <div class="cards two">
+      <article class="card accent-red">
+        <div class="card-ico">!</div>
+        <h3>The Problem</h3>
+        <p>Small farmers lack a low&#8209;cost way to monitor food crates during transport. Network failure and data tampering make product quality and traceability unreliable &mdash; spoilage is discovered only after the produce arrives, and by then the cause is untraceable.</p>
+      </article>
+      <article class="card accent-green">
+        <div class="card-ico">&#10003;</div>
+        <h3>Our Solution</h3>
+        <p>AGRI&#8209;SEAL is a solar&#8209;powered IoT monitoring node fixed to the transport vehicle, generating a single Batch/Trip QR code for all crates loaded together &mdash; cost&#8209;effective, and it reflects the shared cargo environment every crate actually travels in.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INNOVATION ================= -->
+<section class="section tint" id="innovation">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Innovation</span>
+      <h2>Proposed Solution</h2>
+      <p class="lead">One node per vehicle. Signed at the source, chained on the card, delivered over whichever network is alive.</p>
+    </div>
+
+    <div class="cards four">
+      <article class="card">
+        <div class="num">01</div>
+        <h3>Integrated Hardware Stack</h3>
+        <p>A solar&#8209;charged battery, STM32F401 controller, ATECC608A security chip, SD card, 4G modem, LoRa module and SHT35 + MQ&#8209;4 / MQ&#8209;135 sensors (via ADS1115) monitor temperature, humidity and spoilage gases.</p>
+      </article>
+      <article class="card">
+        <div class="num">02</div>
+        <h3>Cryptographic Integrity</h3>
+        <p>Sensor data is cryptographically signed by the ATECC608A and hash&#8209;chained on the SD card, producing tamper&#8209;evident, trustworthy records that cannot be silently rewritten.</p>
+      </article>
+      <article class="card">
+        <div class="num">03</div>
+        <h3>Never&#8209;Offline Alerting</h3>
+        <p>Alerts travel over 4G or LoRa, with automatic offline storage and sync during network outages &mdash; monitoring continues uninterrupted for the whole trip.</p>
+      </article>
+      <article class="card">
+        <div class="num">04</div>
+        <h3>One Batch, One QR</h3>
+        <p>The farmer app registers name, product, quantity, harvest date and place; the backend mints a single Batch/Trip ID and QR that any buyer can scan to read the full journey.</p>
+      </article>
+    </div>
+
+    <h3 class="sub-head">Uniqueness &amp; Innovation</h3>
+    <div class="cards four tight">
+      <div class="mini"><b>Dual&#8209;Gas Monitoring</b><p>MQ&#8209;135 + MQ&#8209;4 via ADS1115 track ripening and spoilage accurately.</p></div>
+      <div class="mini"><b>Tamper&#8209;Proof Data</b><p>ATECC608A signing plus an SD hash&#8209;chain detects tampering instantly.</p></div>
+      <div class="mini"><b>Unified Batch Monitoring</b><p>One node and one QR per vehicle &mdash; low&#8209;cost, and true to shared conditions.</p></div>
+      <div class="mini"><b>Dual Connectivity</b><p>4G + LoRa fallback + offline SD backup means zero data loss.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TECHNICAL APPROACH ================= -->
+<section class="section" id="approach">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Technical Approach</span>
+      <h2>How AGRI&#8209;SEAL Works</h2>
+      <p class="lead">From solar cell to dashboard &mdash; the full data path, and the fallbacks that keep it running.</p>
+    </div>
+
+    <div class="flow">
+      <div class="flow-step"><span>1</span><b>Solar Panel</b><p>Generates power</p></div>
+      <div class="flow-step"><span>2</span><b>TP5100 + LiPo</b><p>Charges &amp; stores energy</p></div>
+      <div class="flow-step"><span>3</span><b>Power Protection</b><p>Fuse + switch + regulators</p></div>
+      <div class="flow-step"><span>4</span><b>STM32F401RCT6</b><p>Reads SHT35, MQ&#8209;4, MQ&#8209;135 and NEO&#8209;M8N via ADS1115</p></div>
+      <div class="flow-step"><span>5</span><b>ATECC608A</b><p>Digital data signing</p></div>
+      <div class="flow-step"><span>6</span><b>MicroSD Card</b><p>Hash&#8209;chain &amp; offline backup</p></div>
+    </div>
+
+    <div class="decision">
+      <div class="dec-node">Is the 4G network available?</div>
+      <div class="dec-branches">
+        <div class="branch yes"><span class="tag">YES</span><p>SIM7600 &rarr; MQTT + SMS &rarr; <b>MQTT Broker</b> &rarr; Dashboard</p></div>
+        <div class="branch mid"><span class="tag alt">LoRa</span><p>Try the LoRa network &rarr; LoRa Gateway &rarr; <b>MQTT Dashboard</b></p></div>
+        <div class="branch no"><span class="tag no">NO</span><p>Store on the SD card &rarr; <b>auto&#8209;sync later</b></p></div>
+      </div>
+    </div>
+
+    <div class="cards two stack-lists">
+      <article class="card">
+        <h3><span class="chip">Hardware</span></h3>
+        <ul class="ticks">
+          <li>STM32F401RCT6 microcontroller</li>
+          <li>SHT35 temperature &amp; humidity sensor</li>
+          <li>MQ&#8209;4 (methane) and MQ&#8209;135 (ethylene) gas sensors</li>
+          <li>ADS1115 16&#8209;bit ADC</li>
+          <li>ATECC608A secure element</li>
+          <li>MicroSD card</li>
+          <li>SIM7600 / A7672S 4G module</li>
+          <li>NEO&#8209;M8N GPS module</li>
+          <li>LoRa module</li>
+          <li>Solar panel, LiPo battery and TP5100 charger</li>
+          <li>Power protection circuit</li>
+          <li>QR code / NFC tag</li>
+          <li>3D&#8209;printed enclosure</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3><span class="chip alt">Software</span></h3>
+        <ul class="ticks">
+          <li>STM32CubeIDE</li>
+          <li>Embedded C / C++</li>
+          <li>MQTT messaging</li>
+          <li>Firebase / MySQL backend</li>
+          <li>Web dashboard</li>
+          <li>QR&#8209;code generation</li>
+          <li>SIM7600 AT commands</li>
+        </ul>
+        <h3 class="mt"><span class="chip alt2">Farmer App</span></h3>
+        <p class="muted">Captures name, product, quantity, harvest date and place at loading, then registers the Batch/Trip ID and generates the single QR code for the whole consignment.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEASIBILITY ================= -->
+<section class="section tint" id="feasibility">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Feasibility &amp; Viability</span>
+      <h2>Buildable Today, Affordable Tomorrow</h2>
+    </div>
+
+    <div class="cards three">
+      <article class="card">
+        <h3>Technical Feasibility</h3>
+        <ul class="ticks">
+          <li>STM32F401, sensors, solar power, battery, 4G and LoRa modules integrate into one working system.</li>
+          <li>Provides secure real&#8209;time monitoring and offline data storage during network failure.</li>
+          <li>Low&#8209;cost, power&#8209;efficient and suited to agricultural cargo &mdash; a whole vehicle load through a single node.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Operational Feasibility</h3>
+        <ul class="ticks">
+          <li>Collects and records cargo conditions automatically, without continuous manual monitoring.</li>
+          <li>4G, LoRa and offline SD storage keep it operating through network interruptions.</li>
+          <li>Real&#8209;time alerts let operators respond quickly to temperature or spoilage changes.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Challenges Overcome</h3>
+        <ul class="ticks">
+          <li>Affordable, with minimal maintenance requirements.</li>
+          <li>Solar&#8209;powered design supports continuous operation without frequent manual charging.</li>
+          <li>One node per vehicle adapts easily to different crops, vehicles and transport conditions.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= IMPACT ================= -->
+<section class="section" id="impact">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Impact &amp; Benefits</span>
+      <h2>Why It Matters</h2>
+    </div>
+
+    <div class="cards two">
+      <article class="card accent-green">
+        <h3>Social Impact</h3>
+        <ul class="ticks">
+          <li>Reduces food spoilage during transportation.</li>
+          <li>Builds customer trust through transparent QR&#8209;based traceability.</li>
+          <li>Improves food safety and supports rural digital development &mdash; post&#8209;harvest losses cut deeply into small&#8209;farmer income, which makes better cold&#8209;chain monitoring socially important.</li>
+        </ul>
+      </article>
+      <article class="card accent-blue">
+        <h3>Benefits</h3>
+        <ul class="ticks">
+          <li>Offline data storage prevents data loss during network failure.</li>
+          <li>Cryptographic hash&#8209;chaining protects records from unauthorised modification.</li>
+          <li>Solar&#8209;assisted power reduces battery replacement.</li>
+          <li>A single QR per vehicle gives quick, cost&#8209;effective product&#8209;history verification.</li>
+          <li>Reusable hardware reduces long&#8209;term operating cost.</li>
+        </ul>
+      </article>
+    </div>
+
+    <h3 class="sub-head">SWOT Analysis</h3>
+    <div class="swot">
+      <div class="sw s"><b>Strength</b><p>Continuous offline monitoring ensures traceability data is preserved even during network outages.</p></div>
+      <div class="sw w"><b>Weakness</b><p>Sensor calibration may require periodic maintenance to keep readings reliable over long&#8209;term deployment.</p></div>
+      <div class="sw o"><b>Opportunity</b><p>Can be scaled across multiple transport vehicles to create a wider farm&#8209;to&#8209;fork traceability network.</p></div>
+      <div class="sw t"><b>Threat</b><p>Availability of specific electronic components may vary over time, causing procurement delays.</p></div>
+    </div>
+
+    <h3 class="sub-head">Future Vision &amp; Market Strategy</h3>
+    <div class="cards three tight">
+      <div class="mini"><b>Wider Coverage</b><p>GPS&#8209;based route optimisation and NB&#8209;IoT connectivity for broader network reach.</p></div>
+      <div class="mini"><b>Predictive AI</b><p>Predict spoilage and remaining shelf life, and recommend the best storage conditions.</p></div>
+      <div class="mini"><b>Active Cooling</b><p>Integrate automatic temperature control for proactive spoilage prevention.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CASE STUDY ================= -->
+<section class="section tint" id="casestudy">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Proof of Problem</span>
+      <h2>Case Study &mdash; Field Insights</h2>
+      <p class="lead">What farmers and transporters told us on the ground.</p>
+    </div>
+    <div class="cards three">
+      <article class="card accent-red">
+        <h3>No temperature visibility</h3>
+        <p>Farmers found produce rotten only after transit &mdash; the exact cause, a temperature deviation, was never known in real time.</p>
+      </article>
+      <article class="card accent-red">
+        <h3>No freshness estimate</h3>
+        <p>Produce is stored purely on guesswork. Knowing the remaining shelf life would help store it for the right duration and cut waste.</p>
+      </article>
+      <article class="card accent-red">
+        <h3>No live tracking</h3>
+        <p>Once dispatched, there is no way to know where the vehicle is or when it will arrive.</p>
+      </article>
+    </div>
+    <p class="takeaway"><b>Takeaway:</b> these are exactly the gaps AGRI&#8209;SEAL closes &mdash; real&#8209;time monitoring, freshness prediction and live GPS tracking.</p>
+  </div>
+</section>
+
+<!-- ================= DEMO VIDEO ================= -->
+<section class="section" id="demo">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Prototype</span>
+      <h2>AGRI&#8209;SEAL in Action</h2>
+      <p class="lead">A walkthrough of the prototype node &mdash; the sensing stack, the enclosure and the data reaching the dashboard.</p>
+    </div>
+    <div class="video-wrap">
+      <video controls playsinline preload="metadata" poster="">
+        <source src="assets/agriseal-demo.mp4" type="video/mp4">
+        Your browser does not support embedded video.
+        <a href="assets/agriseal-demo.mp4">Download the AGRI-SEAL demo video</a>.
+      </video>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TEAM ================= -->
+<section class="section tint" id="team">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Team</span>
+      <h2>Meet Team AEVORA 007</h2>
+      <p class="lead">Six members building AGRI&#8209;SEAL end to end &mdash; hardware, firmware, security, app and dashboard.</p>
+    </div>
+
+    <div class="people six">
+      <article class="person">
+        <img src="assets/member1.jpg" alt="Aashika C.B">
+        <h3>AASHIKA C.B</h3>
+        <p class="role">Team Lead &amp; Project Manager</p>
+        <p class="bio">Owns the roadmap, integration plan and hackathon deliverables.</p>
+      </article>
+      <article class="person">
+        <img src="assets/member2.jpg" alt="Dhivyadharshini S">
+        <h3>DHIVYADHARSHINI S</h3>
+        <p class="role">Hardware &amp; PCB Design</p>
+        <p class="bio">Power protection circuit, solar charging and the 3D&#8209;printed enclosure.</p>
+      </article>
+      <article class="person">
+        <img src="assets/member3.jpg" alt="Gomathi C">
+        <h3>GOMATHI C</h3>
+        <p class="role">Embedded Firmware</p>
+        <p class="bio">STM32F401 firmware in STM32CubeIDE, sensor drivers and ADS1115 acquisition.</p>
+      </article>
+      <article class="person">
+        <img src="assets/member4.jpg" alt="Kamalika R.M">
+        <h3>KAMALIKA R.M</h3>
+        <p class="role">Security &amp; Data Integrity</p>
+        <p class="bio">ATECC608A signing and the SD&#8209;card hash&#8209;chain that makes records tamper&#8209;evident.</p>
+      </article>
+      <article class="person">
+        <img src="assets/member5.jpg" alt="Asher Sam Roshan S">
+        <h3>ASHER SAM ROSHAN S</h3>
+        <p class="role">Connectivity &amp; Cloud</p>
+        <p class="bio">SIM7600 4G, LoRa fallback, the MQTT broker and the Firebase / MySQL backend.</p>
+      </article>
+      <article class="person">
+        <img src="assets/member6.jpg" alt="Raguram Rithish V">
+        <h3>RAGURAM RITHISH V</h3>
+        <p class="role">App, Dashboard &amp; UX</p>
+        <p class="bio">Farmer app, QR generation and the web dashboard buyers scan into.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MENTORS ================= -->
+<section class="section" id="mentors">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Guidance</span>
+      <h2>Our Mentors</h2>
+    </div>
+    <div class="people mentors">
+      <article class="person mentor">
+        <img src="assets/Picture4.jpg" alt="Mr. K. Muthusamy">
+        <h3>Mr. K. Muthusamy</h3>
+        <p class="role">Technical Competitions Head, Rathinam Technical Campus</p>
+      </article>
+      <article class="person mentor">
+        <img src="assets/gajendransir.jpg" alt="Er. Gajendran Parthasarathi">
+        <h3>Er. Gajendran Parthasarathi</h3>
+        <p class="role">Head &mdash; School of Design and Innovation, Rathinam Technical Campus</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESEARCH ================= -->
+<section class="section" id="research">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Research</span>
+      <h2>Research &amp; References</h2>
+    </div>
+    <ul class="refs">
+      <li><span>01</span><p>Smart food logistics: design and test of an IoT&#8209;based food traceability system.</p></li>
+      <li><span>02</span><p>Blockchain&#8209; and IoT&#8209;Based Agri&#8209;Food Supply Chain Traceability to Improve Food Safety and Combat Food Waste and Food Fraud.</p></li>
+      <li><span>03</span><p>Blockchain&#8209;Assisted IoT Wireless Framework for Equipment Monitoring in Smart Supply Chain: A Focus on Temperature and Humidity Sensing.</p></li>
+      <li><span>04</span><p>Proof of Problem &mdash; field interviews and case&#8209;study documentation.</p></li>
+      <li><span>05</span><p>Cost estimation sheet &mdash; AEVORA 007 bill of materials.</p></li>
+      <li><span>06</span><p>AEVORA 007 journey &mdash; project drive and the YouTube walkthrough of AGRI&#8209;SEAL.</p></li>
+    </ul>
+    <p class="note">The reference links from the submission deck can be attached to each entry in <code>index.html</code>.</p>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="footer-mark">AS</span>
+      <div>
+        <b>AGRI&#8209;SEAL</b>
+        <span>Team AEVORA 007 &middot; Problem Statement 26232</span>
+      </div>
+    </div>
+    <div class="footer-end">
+      <a href="https://agri-seali.onrender.com/" target="_blank" rel="noopener" class="footer-link">Dashboard</a>
+      <p>&copy; 2026 Smart India Hackathon. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
